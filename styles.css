@@ -105,10 +105,11 @@ a:active {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  padding: 1rem;
 }
 
 .card_content {
-  padding: 1rem;
+  flex: 1;
 }
 
 .card_title {
@@ -124,6 +125,25 @@ a:active {
   line-height: 1.5;
   margin-bottom: 1.25rem;
   font-weight: 400;
+}
+
+.card_btn {
+  color: var(--blue_dark);
+  padding: 0.6rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 0.3rem;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid var(--blue_dark);
+  background: transparent;
+}
+
+.card_btn:hover {
+  background-color: var(--blue_dark);
+  color: var(--gray_light);
 }
 
 .footer {
