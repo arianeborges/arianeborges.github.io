@@ -5,40 +5,159 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ariane's Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
   </head>
+
   <body>
-    <header>
-      <h1>Hi, I'm Ariane!</h1>
-      <p>I am from Brazil, 28yo and like to code.</p>
-    </header>
+    <div id="page-container">
+      <div id="content-wrap">
+        <header id="header">
+          <h1>Hi! My name is Ariane</h1>
+          <p>I am Frontend developer based in London, United Kingdom.</p>
+          <div class="socials">
+            <a
+              href="https://github.com/arianeborges"
+              target="_blank"
+              class="socialItem bi bi-linkedin"
+            ></a>
+            <a
+              href="https://github.com/arianeborges"
+              target="_blank"
+              class="socialItem bi bi-github"
+            ></a>
+          </div>
+        </header>
+
+        <div class="container">
+          <div class="column">
+            <div class="card">
+              <h2>Booklog - Book Tracker</h2>
+              <p>
+                Booklog is the perfect app for book enthusiasts, providing an
+                immersive and organized way to keep track of your reading
+                journey. Say goodbye to forgetting which book you read last or
+                struggling to recall an intriguing title. With Booklog, your
+                reading experience is elevated to a whole new level.
+              </p>
+              <div class="socials">
+                <p>Available on:</p>
+                <a
+                  href="https://apps.apple.com/gb/app/booklog-book-tracker/id6456526368"
+                  ><img src="./assets/svg/apple.svg" alt="Apple Store Logo"
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <h2>Push Fold Poker Charts</h2>
+              <p>
+                Push/Fold is a common strategy used in tournaments in which you
+                either go all-in preflop or fold. This app will help you
+                understand when you need to fold or shove your entire stack when
+                you are short-stacked in poker tournaments. Use these charts as
+                a study tool to help you improve your understanding of push fold
+                scenarios.
+              </p>
+              <div class="socials">
+                <p>Available on:</p>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.awdigital.pushfoldcharts&pcampaignid=web_share"
+                  ><img src="./assets/svg/android.svg" alt="Apple Store Logo"
+                /></a>
+                <a
+                  href="https://apps.apple.com/us/app/push-fold-poker-charts/id1585381654"
+                  ><img src="./assets/svg/apple.svg" alt="Apple Store Logo"
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <h2>Notesflix</h2>
+              <p>
+                Take notes about your watched movies: search the movie and add
+                it to your app.
+              </p>
+              <div class="socials">
+                <p>Available on:</p>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.awdigital.notesflix&pcampaignid=web_share"
+                  ><img src="./assets/svg/android.svg" alt="Apple Store Logo"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer id="footer">
+        <p>&copy; 2023 Ariane Santos Borges. All rights reserved.</p>
+      </footer>
+    </div>
+    <!-- 
+
     <div class="container">
       <div class="column">
-        <h2>About me</h2>
-        <p>This is the content of column 1.</p>
+        <h2>Booklog - Book Tracker</h2>
+        <p>
+          Booklog is the perfect app for book enthusiasts, providing an
+          immersive and organized way to keep track of your reading journey. Say
+          goodbye to forgetting which book you read last or struggling to recall
+          an intriguing title. With Booklog, your reading experience is elevated
+          to a whole new level.
+        </p>
+        <div class="socials">
+          <p>Available on:</p>
+          <a
+            href="https://apps.apple.com/gb/app/booklog-book-tracker/id6456526368"
+            ><img src="./assets/svg/apple.svg" alt="Apple Store Logo"
+          /></a>
+        </div>
       </div>
+
       <div class="column">
-        <h2>Projects</h2>
-        <dl>
-          <dt>Booklog</dt>
-          <dd>
-            - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque
-            deleniti dolorem repellat dignissimos necessitatibus perspiciatis
-            fugit, modi eius vero enim ab cupiditate repudiandae quasi? Aperiam
-            nihil culpa dolor inventore sequi.
-          </dd>
-          <br />
-          <dt>Poker Push Folder</dt>
-          <dd>
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatem voluptas, enim dolorum consequuntur hic, fugiat
-            accusantium ut quos praesentium ratione assumenda quis ipsa
-            repellendus qui quasi quas totam nisi natus?
-          </dd>
-        </dl>
+        <h2>Push Fold Poker Charts</h2>
+        <p>
+          Push/Fold is a common strategy used in tournaments in which you either
+          go all-in preflop or fold. This app will help you understand when you
+          need to fold or shove your entire stack when you are short-stacked in
+          poker tournaments. Use these charts as a study tool to help you
+          improve your understanding of push fold scenarios.
+        </p>
+        <div class="socials">
+          <p>Available on:</p>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.awdigital.pushfoldcharts&pcampaignid=web_share"
+            ><img src="./assets/svg/android.svg" alt="Apple Store Logo"
+          /></a>
+          <a
+            href="https://apps.apple.com/us/app/push-fold-poker-charts/id1585381654"
+            ><img src="./assets/svg/apple.svg" alt="Apple Store Logo"
+          /></a>
+        </div>
+      </div>
+
+      <div class="column">
+        <h2>Notesflix</h2>
+        <p>
+          Take notes about your watched movies: search the movie and add it to
+          your app.
+        </p>
+        <div class="socials">
+          <p>Available on:</p>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.awdigital.notesflix&pcampaignid=web_share"
+            ><img src="./assets/svg/android.svg" alt="Apple Store Logo"
+          /></a>
+        </div>
       </div>
     </div>
-    <footer>
-      <p>&copy; 2023 My Web Page. All rights reserved.</p>
-    </footer>
+
+    -->
   </body>
 </html>
