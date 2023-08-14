@@ -133,12 +133,15 @@ a:active {
   font-size: 14px;
   text-transform: uppercase;
   border-radius: 0.3rem;
-  font-weight: 400;
+  font-weight: 600;
   display: block;
   width: 100%;
   cursor: pointer;
   border: 1px solid var(--blue_dark);
   background: transparent;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.3s;
 }
 
 .card_btn:hover {
