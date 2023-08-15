@@ -75,16 +75,27 @@ a:active {
 
 .main {
   display: flex;
+  flex-wrap: wrap;
   padding: 1.5rem;
 }
 
-.cardGeneral {
+.imagesSlideshow {
+  flex: 1;
   background-color: var(--gray_light);
-  border-radius: 0.3rem;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
   padding: 1rem;
+  margin-left: 1.5rem;
+  border-radius: 0.3rem;
+  overflow: hidden;
+}
+
+.cardGeneral {
+  display: flex;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: baseline;
+  background-color: var(--gray_light);
 }
 
 .cardStack {
@@ -108,6 +119,22 @@ li {
 @media (max-width: 40rem) {
   .cardInfo {
     display: inline;
+  }
+}
+
+@media (max-width: 70rem) {
+  .cardGeneral,
+  .imagesSlideshow {
+    width: 100%;
+  }
+
+  .cardGeneral {
+    margin-bottom: 1.5rem;
+  }
+
+  .imagesSlideshow {
+    margin-left: 0;
+    margin-bottom: 0;
   }
 }
 
