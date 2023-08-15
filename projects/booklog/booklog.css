@@ -74,7 +74,7 @@ a:active {
 }
 
 .main {
-  /* display: flex; */
+  display: flex;
   padding: 1.5rem;
 }
 
@@ -103,6 +103,12 @@ li {
   display: flex;
   align-items: baseline;
   margin-bottom: 1rem;
+}
+
+@media (max-width: 40rem) {
+  .cardInfo {
+    display: inline;
+  }
 }
 
 .cardInfo h4 {
