@@ -50,15 +50,87 @@
               </div>
             </div>
             <div class="rest-of-screen">
-              <img
-                src="../booklog/assets/Hotpot0.png"
-                width="30%"
-                height="30%"
-              />
+              <div class="slider">
+                <img
+                  src="../booklog/assets/Hotpot0.png"
+                  width="30%"
+                  height="30%"
+                />
+                <img
+                  src="../booklog/assets/Hotpot1.png"
+                  width="30%"
+                  height="30%"
+                />
+                <img
+                  src="../booklog/assets/Hotpot2.png"
+                  width="30%"
+                  height="30%"
+                />
+                <img
+                  src="../booklog/assets/Hotpot3.png"
+                  width="30%"
+                  height="30%"
+                />
+                <img
+                  src="../booklog/assets/Hotpot4.png"
+                  width="30%"
+                  height="30%"
+                />
+                <img
+                  src="../booklog/assets/Hotpot5.png"
+                  width="30%"
+                  height="30%"
+                />
+                <img
+                  src="../booklog/assets/Hotpot6.png"
+                  width="30%"
+                  height="30%"
+                />
+              </div>
+              <div class="slider-controls">
+                <button id="prevBtn">Previous</button>
+                <button id="nextBtn">Next</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      <footer class="footer">
+        <p>&copy; 2023 Ariane Santos Borges. All rights reserved.</p>
+      </footer>
     </div>
+
+    <script>
+      const slider = document.querySelector(".slider");
+      const prevBtn = document.querySelector("#prevBtn");
+      const nextBtn = document.querySelector("#nextBtn");
+
+      let currentIndex = 0;
+
+      function showImages() {
+        const imageWidth = slider.clientWidth;
+        const numVisibleImages = 3;
+        const totalImages = 7;
+        const percentage =
+          (currentIndex / (totalImages - numVisibleImages)) * 100;
+
+        slider.style.transform = `translateX(-${percentage}%)`;
+      }
+
+      prevBtn.addEventListener("click", () => {
+        currentIndex = Math.max(currentIndex - 1, 0);
+        showImages();
+      });
+
+      nextBtn.addEventListener("click", () => {
+        currentIndex = Math.min(currentIndex + 1, 5); // Adjust maximum index based on number of visible images
+        showImages();
+      });
+
+      showImages();
+
+      window.addEventListener("resize", showImages); // Update slider on window resize
+    </script>
   </body>
 </html>

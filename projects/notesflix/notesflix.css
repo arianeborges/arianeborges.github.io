@@ -103,6 +103,7 @@ a:active {
   margin-right: 1rem;
   border-radius: 0.3rem;
   background-color: var(--gray_light);
+  overflow: hidden;
 }
 
 @media (max-width: 70rem) {
@@ -117,4 +118,34 @@ a:active {
   .cardInfo {
     display: inline;
   }
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slider img {
+  margin-right: 1rem;
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.slider-controls button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--gray_light);
+  text-align: center;
 }
