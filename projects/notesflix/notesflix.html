@@ -14,18 +14,21 @@
     <div class="page-container">
       <div class="content-wrap">
         <header class="header">
+          <img
+            src="../../assets/booklog/splash.png"
+            alt="Booklog Logo Image"
+            class="booklogImg"
+          />
           <h1>Notesflix</h1>
           <div>
             <a
-              href="https://apps.apple.com/gb/app/booklog-book-tracker/id6456526368"
               target="_blank"
-              ><img
-                src="../../assets/svg/apple.svg"
-                alt="Apple Store Logo"
-                width="18px"
+              href="https://play.google.com/store/apps/details?id=com.awdigital.notesflix&pcampaignid=web_share"
+              ><img src="../../assets/svg/android.svg" alt="Android Store Logo"
             /></a>
           </div>
         </header>
+
         <div class="main">
           <div class="outer-container">
             <div class="content">
@@ -100,37 +103,6 @@
         <p>&copy; 2023 Ariane Santos Borges. All rights reserved.</p>
       </footer>
     </div>
-
-    <script>
-      const slider = document.querySelector(".slider");
-      const prevBtn = document.querySelector("#prevBtn");
-      const nextBtn = document.querySelector("#nextBtn");
-
-      let currentIndex = 0;
-
-      function showImages() {
-        const imageWidth = slider.clientWidth;
-        const numVisibleImages = 3;
-        const totalImages = 7;
-        const percentage =
-          (currentIndex / (totalImages - numVisibleImages)) * 100;
-
-        slider.style.transform = `translateX(-${percentage}%)`;
-      }
-
-      prevBtn.addEventListener("click", () => {
-        currentIndex = Math.max(currentIndex - 1, 0);
-        showImages();
-      });
-
-      nextBtn.addEventListener("click", () => {
-        currentIndex = Math.min(currentIndex + 1, 5); // Adjust maximum index based on number of visible images
-        showImages();
-      });
-
-      showImages();
-
-      window.addEventListener("resize", showImages); // Update slider on window resize
-    </script>
+    <script src="../script.js"></script>
   </body>
 </html>

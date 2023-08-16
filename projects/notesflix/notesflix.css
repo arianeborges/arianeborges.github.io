@@ -49,6 +49,13 @@ h1 {
   text-align: center;
 }
 
+.booklogImg {
+  border-radius: 10%;
+  border: 1px solid var(--blue_dark);
+  width: 100px;
+  height: 100px;
+}
+
 .main {
   display: flex;
   flex-wrap: wrap;

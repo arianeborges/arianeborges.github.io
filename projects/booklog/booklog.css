@@ -39,6 +39,7 @@ h1 {
   font-size: 24px;
   font-weight: 600;
   text-align: center;
+  color: var(--blue_dark);
 }
 
 .header {
@@ -46,24 +47,6 @@ h1 {
   padding: 50px;
   border-bottom: 1px solid var(--gray_light);
   text-align: center;
-}
-
-.socialItem {
-  margin-right: 0.375rem;
-}
-
-.socials a:link {
-  color: var(--gray_light);
-  background-color: transparent;
-  text-decoration: none;
-}
-
-.socials a:visited,
-a:hover,
-a:active {
-  color: var(--blue_dark);
-  background-color: transparent;
-  text-decoration: none;
 }
 
 .booklogImg {
@@ -79,74 +62,37 @@ a:active {
   padding: 1.5rem;
 }
 
-.imagesSlideshow {
-  flex: 1;
-  background-color: var(--gray_light);
-  padding: 1rem;
-  margin-left: 1.5rem;
-  border-radius: 0.3rem;
-  overflow: hidden;
-}
-
-.cardGeneral {
+.outer-container {
   display: flex;
-  padding: 1rem;
-  border-radius: 0.3rem;
-  overflow: hidden;
-  flex-direction: column;
-  align-items: baseline;
-  background-color: var(--gray_light);
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-.cardStack {
-  display: inline;
-  align-items: baseline;
-  margin-bottom: 1rem;
+.content {
+  padding: 1rem;
+  margin-right: 1rem;
+  border-radius: 0.3rem;
+  background-color: var(--gray_light);
 }
 
 .cardStack h4,
 ul,
 li {
-  margin: 0;
+  margin: 0.3rem;
+  color: var(--blue_dark);
 }
 
 .cardInfo {
   display: flex;
   align-items: baseline;
-  margin-bottom: 1rem;
 }
 
-@media (max-width: 40rem) {
-  .cardInfo {
-    display: inline;
-  }
-}
-
-@media (max-width: 70rem) {
-  .cardGeneral,
-  .imagesSlideshow {
-    width: 100%;
-  }
-
-  .cardGeneral {
-    margin-bottom: 1.5rem;
-  }
-
-  .imagesSlideshow {
-    margin-left: 0;
-    margin-bottom: 0;
-  }
-}
-
-.cardInfo h4 {
-  margin: 0;
-  padding-right: 0.3rem;
-}
-
-.cardInfo p,
+.cardInfo h4,
+p,
 a {
-  margin: 0;
-  padding: 0;
+  margin: 0.3rem;
+  color: var(--blue_dark);
 }
 
 .cardInfo a:link,
@@ -156,6 +102,51 @@ a:active {
   color: var(--blue_dark);
   background-color: transparent;
   text-decoration: none;
+}
+
+.rest-of-screen {
+  flex: 1;
+  padding: 1rem;
+  margin-right: 1rem;
+  border-radius: 0.3rem;
+  background-color: var(--gray_light);
+  overflow: hidden;
+}
+
+@media (max-width: 70rem) {
+  .content,
+  .rest-of-screen {
+    flex: 100%;
+    margin: 0.3rem 0;
+  }
+}
+
+@media (max-width: 40rem) {
+  .cardInfo {
+    display: inline;
+  }
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slider img {
+  margin-right: 1rem;
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.slider-controls button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  border: none;
+  cursor: pointer;
 }
 
 .footer {
